@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>dashboard</title>
+</head>
+<body>
+    <div class="w-screen h-screen">
+        <div class="p-4 flex items-center justify-between mb-4 ">
+            <div class="text-lg font-bold">
+                <p id="greeting" class="text-gray-500 inline text-xl"></p><i class="fa fa-thumbs-o-up ml-2 inline"></i>
+                <p id="user-name" class="mt-3 text-xl"></p>
+            </div>
+            <div class="flex items-center gap-3">
+                <button id="logout" class="block py-3 px-5 border rounded-full text-white bg-slate-600">Logout</button>
+                <img class="w-9" src="images/svg/bell.svg" alt="">
+                <img class="w-9" src="images/svg/heart.svg" alt="">
+            </div>    
+        </div>
+        <div class=" focus-within:outline flex items-center gap-2 px-4 rounded-xl mb-4">
+            <i class="fa fa-search"></i>
+            <input class="outline-none w-full p-2" type="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="flex justify-between items-center mb-4 px-3">
+            <p class="text-2xl">Most Popular</p>
+            <p class="text-xl">See All</p>
+        </div>
+        <div id="brands-shose" class="flex gap-3 overflow-x-scroll mb-4 px-3">
+            <button class="w-full px-10 rounded-full border border-black bg-[#343A40] text-white">All</button>
+        </div>
+        <div id="container-product" class="grid grid-cols-2 gap-2 px-3">
+        </div>
+        <div class="w-full flex gap-2 justify-center mb-24">
+            <button id="totalpages1" class="p-3 bg-slate-400 text-white">1</button>
+            <button id="totalpages2" class="p-3 bg-slate-400 text-white">2</button>
+            <button id="totalpages3" class="p-3 bg-slate-400 text-white">3</button>
+            <button id="totalpages4" class="p-3 bg-slate-400 text-white">4</button>
+            <button id="totalpages5" class="p-3 bg-slate-400 text-white">5</button>
+        </div>
+        <div class="w-full h-1"></div>
+        <div class="bg-white flex justify-between w-full px-3 py-5 items-center fixed bottom-0">
+            <img src="images/svg/house-door-fill.svg" alt="">
+            <img src="images/svg/bag.svg" alt="">
+            <img src="images/svg/cart2.svg" alt="">
+            <img src="images/svg/wallet2.svg" alt="">
+            <img src="images/svg/person.svg" alt="">
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script defer type="module" src="scripts/dashboard.js"></script>
+    <script src="./apis/services/sneaker.service.js"></script>
+</body>
+</html>

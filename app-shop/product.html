@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="w-screen h-screen overflow-x-hidden">
+      <div class="p-5">
+        <button id="back"><img src="./images/svg/back-icon.svg" alt="shoe image" /></button>
+      </div>
+      <div>
+        <div class="bg-[#F3F3F3]">
+          <img id="image-shoe" alt="" />
+        </div>
+        <div class="flex justify-between p-4">
+          <h1 id="title-shoe" class="text-3xl font-bold">Running Sportwear</h1>
+          <img src="images/svg/heart.svg" alt="" />
+        </div>
+        <div class="flex items-center gap-4 w-full border-b-2 px-4 py-1">
+          <span class="text-xs p-2 rounded-md bg-gray-300">5.371 sold</span>
+          <i class="fa fa-star-half-empty"></i> <span>4.3 (5.389 reviws)</span>
+        </div>
+        <div class="p-4">
+          <p class="text-lg font-bold">Description</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            itaque quisquam ut quae in<a class="text-gray-800" href="#">view more...</a>
+          </p>
+        </div>
+        <div class="flex items-center justify-between p-4 gap-2">
+            <div>
+                <p>Size</p>
+                <div id="size-list" class="w-full flex gap-1 overflow-x-scroll">
+                  <!-- <div class="border border-slate-400 px-4 py-3 rounded-full">42</div> -->
+                </div>
+            </div>
+            <div>
+                <p>Color</p>
+                <div id="color-list" class="flex gap-1 overflow-x-scroll w-full">
+                  <!-- <button style="background-color: red; border: 1px solid silver; width: 20px;height: 20px; border-radius: 50%;"></button> -->
+                   <!-- <i class="fa fa-check"></i> -->
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-2 p-4">
+            <p class="text-2xl font-bold mr-6">Quantity</p> 
+            <button id="btn-minus" class="px-3 py-2 "><i class="fa fa-minus"></i></button>
+            <span id="count">0</span>
+            <button id="btn-plus" class="px-3 py-2"><i class="fa fa-plus "></i></button>
+        </div>
+        <div class="flex items-center justify-between p-4">
+            <div>
+                <p class="text-gray-500">Total Price</p>
+                <p class="font-bold text-3xl">$ <span id="total-price">0</span></p>
+            </div>
+            <div>
+                <button class="flex items-center gap-3 py-4 px-16 rounded-full bg-black text-white"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/scripts/product.js"></script>
+  </body>
+</html>
